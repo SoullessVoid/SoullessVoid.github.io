@@ -1,0 +1,36 @@
+.parallax {
+    /* The image used */
+    background-image: url("bg.jpg");
+
+    /* Set a specific height */
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color:white;
+}
+.noBlur {
+    -webkit-filter: blur(0px); /* Safari */
+    filter: blur(0px);
+}
+.jumbotron {
+    padding: 50px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+th {
+    padding: 20px;
+}
+#logo {
+    width: 150px;
+    height: 150px;
+}
+#navlogo {
+    width: 30px;
+    height: 30px;
+}
+.centered {
+    text-align: center;
+}
