@@ -1,24 +1,49 @@
 html {
     height: 100%;
     width: 100%;
-    overflow: hidden;
 }
 body {
     font-family: 'Nunito', sans-serif;
-    width: 100%;
+    /*width: 100%;
     height: 100%;
     overflow-y: scroll;
     padding-right: 17px; /* Increase/decrease this value for cross-browser compatibility */
-    box-sizing: content-box; /* So the width will be 100% + 17px */
+    /*box-sizing: content-box; /* So the width will be 100% + 17px */
 }
 .bg {
     width: 100%;
 }
+
+.gagi {
+    border-radius: 6px;
+    border-width: 0px;
+    padding: 5px;
+    background-color: hsl(0, 0%, 21%);
+    color:white;
+}
 ::selection {
     border-radius: 25px;
-    background: pink; /* WebKit/Blink Browsers */
+    background: tan; /* WebKit/Blink Browsers */
   }
 ::-moz-selection {
     border-radius: 25px;
-    background: pink; /* Gecko Browsers */
+    background: tan; /* Gecko Browsers */
+}
+
+::-webkit-scrollbar {
+    background: lightgrey;
+}
+::-webkit-scrollbar-button {
+    display: none;
+}
+::-webkit-scrollbar-track {
+    background: lightgrey;
+}
+::-webkit-scrollbar-track-piece {
+    background: lightgrey;
+    border-radius: 6px;
+}
+::-webkit-scrollbar-thumb {
+    background: grey;
+    border-radius: 6px;
 }
