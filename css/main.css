@@ -2,6 +2,7 @@ html {
     height: 100%;
     width: 100%;
     background-color: hsl(0, 0%, 21%);
+    scroll-behavior: smooth;
 }
 body {
     font-family: 'Nunito', sans-serif;
@@ -23,28 +24,66 @@ body {
     color:white;
 }
 ::selection {
-    border-radius: 25px;
-    background: tan; /* WebKit/Blink Browsers */
+    background: skyblue; /* WebKit/Blink Browsers */
   }
 ::-moz-selection {
-    border-radius: 25px;
-    background: tan; /* Gecko Browsers */
+    background: skyblue; /* Gecko Browsers */
 }
 
 ::-webkit-scrollbar {
     background: lightgrey;
+    display: none;
 }
 ::-webkit-scrollbar-button {
     display: none;
 }
 ::-webkit-scrollbar-track {
     background: lightgrey;
+    display: none;
 }
 ::-webkit-scrollbar-track-piece {
     background: lightgrey;
     border-radius: 6px;
+    display: none;
 }
 ::-webkit-scrollbar-thumb {
     background: grey;
     border-radius: 6px;
+    display: none;
+}
+
+.tile {
+    outline: 1px;
+    outline-color: black;
+}
+.sticky {
+    position: fixed;    
+    top: 0;
+    width: 100%;
+}
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+    padding-top: 60px;
+}
+.invisible {
+    display: none;
+}
+ul {
+    display: inline;
+}
+
+#footer {
+    -webkit-transition: opacity 0.25s ease-in-out;
+    -moz-transition: opacity 0.25s ease-in-out;
+    -ms-transition: opacity 0.25s ease-in-out;
+    -o-transition: opacity 0.25s ease-in-out;
+    opacity: 0.2;
+}
+
+#footer:hover {
+    -webkit-transition: opacity 0.25s ease-in-out;
+    -moz-transition: opacity 0.25s ease-in-out;
+    -ms-transition: opacity 0.25s ease-in-out;
+    -o-transition: opacity 0.25s ease-in-out;
+    opacity: 1;
 }
